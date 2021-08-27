@@ -7,6 +7,7 @@ import { OrderCreatedListener } from './events/listeners/order-created-listener'
 const port = 3000;
 
 const start = async () => {
+  console.log('startup message !!');
   if (!process.env.JWT_KEY) {
     throw new Error('must jwt key not be empty');
   }
