@@ -1,0 +1,9 @@
+name: test-expiration
+on:
+  pull_request
+jobs:
+  build:
+    runs-on: ubnutu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: cd expiration && npm install && npm run test:ci
