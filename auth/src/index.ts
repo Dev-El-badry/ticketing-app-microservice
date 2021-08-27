@@ -4,7 +4,7 @@ import mongoose from 'mongoose';
 const port = 3000;
 
 const start = async () => {
-  console.log('startup message !!');
+  console.log('startup message second !!');
 
   if (!process.env.JWT_KEY) {
     throw new Error('must jwt key not be empty');
